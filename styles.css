@@ -1,0 +1,49 @@
+html {
+    position: relative;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border: 1px red solid;
+    width: 100%;
+    background: #ffffff;
+}
+
+.footer {
+    border: 1px red solid;
+    height:80px;
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+}
+
+.container-1 {
+    margin-top:80px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.container-1,.container-1 div {
+    border: 1px red solid
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+    .container-2 {
+        grid-template-columns: 1fr
+    }
+}
+
